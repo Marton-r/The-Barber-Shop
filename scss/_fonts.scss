@@ -1,0 +1,24 @@
+$pFont: 'EB Garamond',
+serif;
+$h1Font: 'Smythe',
+cursive;
+$h1Size: 4rem;
+$h2Size: 3rem;
+
+h1 {
+    color: $fontColor;
+    font-family: $h1Font;
+    font-size: $h1Size;
+}
+
+
+h2 {
+    color: black;
+    font-size: x-large;
+    font-family: $h1Font;
+    font-size: $h2Size;
+}
+
+p {
+    color: $fontColor;
+}

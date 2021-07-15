@@ -1,0 +1,31 @@
+$padding: 2rem;
+
+.formulario {
+    border: solid #000000 2px;
+    padding: 10px;
+    form {
+        margin: 20px;
+      }
+
+    .formulario__password--resaltado {
+        background-color: #F24D2C;
+    }
+
+    .formulario__boton {
+        background: $buttonColor;
+        padding: 5px;
+        color: $fontColor;
+    }
+
+    label {
+        font-family: $h1Font;
+        font-size: $padding/2+0.5;
+        color: $fontColor;
+    }
+
+    legend {
+        font-family: $h1Font;
+        font-size: $padding/2+0.5;
+        color: $fontColor;
+    }
+}

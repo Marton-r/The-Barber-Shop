@@ -1,0 +1,366 @@
+h1 {
+  color: #000000;
+  font-family: "Smythe", cursive;
+  font-size: 4rem; }
+
+h2 {
+  color: black;
+  font-size: x-large;
+  font-family: "Smythe", cursive;
+  font-size: 3rem; }
+
+p {
+  color: #000000; }
+
+.container .header .header__titulo {
+  padding: 1rem;
+  font-weight: bold; }
+
+.container .header .login {
+  padding: 1rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .container .header .login .login__boton--color {
+    background-color: #BF3D22;
+    color: #000000; }
+    .container .header .login .login__boton--color:hover {
+      color: #f5f5f5; }
+
+.container .header .wp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
+  .container .header .wp .btn-grad {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    background-image: linear-gradient(to right, #fcff9e 0%, #c67700 51%, #fcff9e 100%);
+    padding: 10px 10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 20px;
+    display: block; }
+    .container .header .wp .btn-grad:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none; }
+
+.container .header ul li {
+  font-family: "Smythe", cursive;
+  list-style: none;
+  display: inline-block;
+  font-size: x-large;
+  padding: 5px; }
+  .container .header ul li a.active {
+    background-color: #928362;
+    color: #000000; }
+
+.container .header a {
+  text-decoration: none;
+  color: #5f5f5f; }
+  .container .header a:hover {
+    color: #000000; }
+
+.container .header .header__row {
+  justify-content: space-between; }
+
+.footer .footer__address {
+  color: #000000;
+  font-family: "Smythe", cursive;
+  font-size: 1.5rem;
+  margin-left: 10px; }
+
+.footer .footer__redes {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-content: flex-end; }
+
+.footer .footer__mapa {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; }
+  .footer .footer__mapa .footer__responsiveMap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none; }
+
+.footer .footer__barra {
+  background-image: linear-gradient(to right, #fcff9e 0%, #c67700 51%, #fcff9e 100%);
+  transition: 0.7s;
+  background-size: 200% auto;
+  color: #000000;
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  font-family: "Smythe", cursive;
+  font-size: 1.5rem;
+  width: 100%; }
+  .footer .footer__barra:hover {
+    background-position: right center;
+    color: #fff; }
+
+.main__barra {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+body {
+  background-image: url(/img/world-map-1600.jpg);
+  background-attachment: fixed;
+  background-size: cover; }
+
+.container {
+  background-size: contain;
+  background-image: url(/img/brown-blank-old-paper2.jpg);
+  background-attachment: scroll; }
+
+.comentarios {
+  margin: 2px;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap; }
+  .comentarios .comentarios__titulo {
+    display: flex;
+    align-items: baseline;
+    justify-content: center; }
+    .comentarios .comentarios__titulo .comentarios__img {
+      width: 10rem; }
+
+.comentarios__p {
+  font-weight: bold;
+  line-height: 1.5rem;
+  font-family: "EB Garamond", serif;
+  width: fit-content;
+  padding: 1rem;
+  margin: 5px; }
+
+.nosotrosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "titulo titulo" "coll-1 coll-2" "coll-3 coll-4" "coll-5 coll-6";
+  gap: 10px;
+  justify-items: center;
+  align-items: center; }
+  .nosotrosGrid .nosotrosGrid__equipo {
+    padding: 20px;
+    font-family: "EB Garamond", serif;
+    width: 100%; }
+  .nosotrosGrid .equipo img {
+    max-width: 250px; }
+
+.uno {
+  grid-area: coll-1; }
+
+.dos {
+  grid-area: coll-2; }
+
+.tres {
+  grid-area: coll-3; }
+
+.cuatro {
+  grid-area: coll-4; }
+
+.cinco {
+  grid-area: coll-5; }
+
+.seis {
+  grid-area: coll-6; }
+
+.titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .titulo img {
+    max-width: 100px; }
+
+.nosotros__titulo {
+  text-align: center; }
+
+.formulario {
+  border: solid #000000 2px;
+  padding: 10px; }
+  .formulario form {
+    margin: 20px; }
+  .formulario .formulario__password--resaltado {
+    background-color: #F24D2C; }
+  .formulario .formulario__boton {
+    background: #BF3D22;
+    padding: 5px;
+    color: #000000; }
+  .formulario label {
+    font-family: "Smythe", cursive;
+    font-size: 1.5rem;
+    color: #000000; }
+  .formulario legend {
+    font-family: "Smythe", cursive;
+    font-size: 1.5rem;
+    color: #000000; }
+
+.tituloTienda {
+  text-align: center; }
+
+.tienda .tienda__prod {
+  padding: 10px; }
+
+.tienda .card {
+  border-radius: 40px;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 10px; }
+  .tienda .card .card-title {
+    text-align: center; }
+    .tienda .card .card-title .card-text {
+      text-align: center; }
+
+.tienda .card-body button {
+  background-color: #BF3D22;
+  color: whitesmoke;
+  width: 100%; }
+
+.modal-footer .formulario__boton {
+  /*Eliminar despues de entregar*/
+  background-color: cadetblue;
+  color: yellow;
+  background-color: cadetblue; }
+
+/* MIXINS*/
+.galeria .galeria__imagen {
+  margin: 0 auto; }
+
+.galeria .galeria__musica {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .galeria .galeria__musica .musica iframe {
+    border: solid antiquewhite 5px;
+    border-radius: 40px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+.galeria .galeria__video {
+  display: flex;
+  margin: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .galeria .galeria__video .videos iframe {
+    border: solid antiquewhite 5px;
+    border-radius: 40px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+.galeria__titulo {
+  text-align: center; }
+
+@-webkit-keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+.slide-in-blurred-right {
+  -webkit-animation: slide-in-blurred-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-right 1.5s cubic-bezier(0.23, 1, 0.32, 1) both; }
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(/img/kale-salad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll; } }
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-image: url(/img/vintage-pattern-wallpaper-texture-5-780x1178.jpg);
+    background-attachment: fixed; }
+  p {
+    color: #000000; }
+  address {
+    color: #000000; } }
+
+@media screen and (max-width: 720px) {
+  .nosotrosGrid {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "titulo" "uno" "dos" "tres" "cuatro" "cinco" "seis";
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2px; } }
+
+.logoTienda {
+  display: flex;
+  justify-content: center; }
+
+#logoBarber {
+  display: flex; }
+
+.header__linkTop {
+  color: #000000;
+  padding: 20px; }
+
+.bienvenidos {
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

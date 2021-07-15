@@ -1,0 +1,61 @@
+
+.nosotrosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "titulo titulo"
+    "coll-1 coll-2"
+    "coll-3 coll-4"
+    "coll-5 coll-6";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+
+  .nosotrosGrid__equipo {
+    padding: 20px;
+    font-family: $pFont;
+    width: 100%;
+  }
+  .equipo{
+    img{
+      max-width: 250px;
+    }
+  }
+}
+
+.uno {
+  grid-area: coll-1;
+}
+
+.dos {
+  grid-area: coll-2;
+}
+
+.tres {
+  grid-area: coll-3;
+}
+
+.cuatro {
+  grid-area: coll-4;
+}
+
+.cinco {
+  grid-area: coll-5;
+}
+
+.seis {
+  grid-area: coll-6;
+}
+
+.titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  img{
+    max-width: 100px;
+  }
+}
+.nosotros__titulo{
+  text-align: center;
+}

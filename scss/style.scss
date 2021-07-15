@@ -1,0 +1,20 @@
+@import "colors";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "bannerCentral";
+@import "body";
+@import "comentariosIndex";
+@import "equipo";
+@import "formulario";
+@import "productos";
+@import "galeria";
+@import "efectos";
+@import "mediaQueries";
+@import "varios";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

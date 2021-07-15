@@ -1,0 +1,53 @@
+$padding: 2rem;
+
+.footer {
+    .footer__address {
+      color: $fontColor;
+      font-family: $h1Font;
+      font-size: $padding/2+0.5;
+      margin-left: 10px;
+    }
+  
+    .footer__redes {
+      padding: $padding/2;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      align-content: flex-end;
+    }
+  
+    .footer__mapa {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%;
+  
+      .footer__responsiveMap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+  
+    .footer__barra {
+      background-image: linear-gradient(to right, #fcff9e 0%, #c67700 51%, #fcff9e 100%);
+      transition: 0.7s;
+      background-size: 200% auto;
+      color: $fontColor;
+      box-shadow: 0 0 20px #eee;
+      display: block;
+      font-family: $h1Font;
+      font-size: 1.5rem;
+      width: 100%;
+  
+      &:hover {
+        background-position: right center;
+        color: #fff;
+      }
+    }
+  }

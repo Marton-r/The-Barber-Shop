@@ -1,0 +1,27 @@
+$padding: 2rem;
+
+.comentarios {
+    margin: 2px;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+  
+    .comentarios__titulo {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+  
+      .comentarios__img {
+        width: $padding*5;
+      }
+    }
+  }
+  
+  .comentarios__p {
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-family: $pFont;
+    width: fit-content;
+    padding: $padding/2;
+    margin: 5px;
+  }

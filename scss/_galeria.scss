@@ -1,0 +1,43 @@
+/* MIXINS*/
+@mixin galeria($margin) {
+    border: solid antiquewhite 5px;
+    border-radius: 40px;
+    margin: $margin;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@mixin galeria1($margin1) {
+    display: flex;
+    margin: $margin1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria {
+    .galeria__imagen {
+        margin: 0 auto;
+    }
+
+    .galeria__musica {
+        @include galeria1(20px);
+
+        .musica iframe {
+            @include galeria(10px)
+        }
+    }
+
+    .galeria__video {
+        @include galeria1 (5px);
+
+        .videos iframe {
+            @include galeria(10px)
+        }
+    }
+}
+
+.galeria__titulo {
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+@mixin colorBoton($color) {
+    background-color: $color;
+
+    @if $color==$buttonColor {
+        color: whitesmoke;
+    }
+
+    @else if $color !=$buttonColor {
+        color: yellow;
+
+    }
+}
+
+.tituloTienda{
+    text-align: center;
+}
+
+.tienda {
+    .tienda__prod {
+        padding: 10px;
+    }
+
+    .card {
+        border-radius: 40px;
+        font-family: $pFont;
+        font-weight: bold;
+        line-height: 1.5rem;
+        padding: 10px;
+
+
+        .card-title {
+            text-align: center;
+
+            .card-text {
+                text-align: center;
+            }
+        }
+    }
+
+    .card-body button {
+        @include colorBoton($buttonColor);
+        width: 100%;
+
+    }
+}
+
+.modal-footer {
+    .formulario__boton {
+        /*Eliminar despues de entregar*/
+        @include colorBoton(cadetblue);
+        background-color: cadetblue;
+    }
+}
