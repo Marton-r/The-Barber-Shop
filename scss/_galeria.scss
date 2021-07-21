@@ -14,6 +14,10 @@
     margin: $margin1;
     flex-wrap: wrap;
     justify-content: space-around;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .galeria {
@@ -32,11 +36,20 @@
     .galeria__video {
         @include galeria1 (5px);
 
-        .videos iframe {
-            @include galeria(10px)
+        
+        .galeria__video__responsive1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
         }
     }
-}
+
 
 .galeria__titulo {
     text-align: center;

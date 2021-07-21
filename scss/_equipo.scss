@@ -18,7 +18,9 @@
   }
   .equipo{
     img{
-      max-width: 250px;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
     }
   }
 }
@@ -50,6 +52,7 @@
 .titulo {
   grid-area: titulo;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   img{

@@ -26,13 +26,14 @@ p {
     background-color: #BF3D22;
     color: #000000; }
     .container .header .login .login__boton--color:hover {
-      color: #ffffff; }
+      background-color: #f59a88; }
 
 .container .header .wp {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end; }
   .container .header .wp .btn-grad {
+    z-index: 2;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -69,7 +70,8 @@ p {
     color: #ffffff; }
 
 .container .header .header__row {
-  justify-content: space-between; }
+  justify-content: space-between;
+  display: flex; }
 
 .container .header .nav-link {
   color: #ffffff; }
@@ -88,6 +90,7 @@ p {
   align-content: flex-end; }
 
 .footer .footer__mapa {
+  z-index: 1;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -169,7 +172,9 @@ body {
     font-family: "EB Garamond", serif;
     width: 100%; }
   .nosotrosGrid .equipo img {
-    max-width: 250px; }
+    width: 250px;
+    height: 250px;
+    object-fit: cover; }
 
 .uno {
   grid-area: coll-1; }
@@ -192,6 +197,7 @@ body {
 .titulo {
   grid-area: titulo;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center; }
   .titulo img {
@@ -202,7 +208,8 @@ body {
 
 .formulario {
   border: solid #000000 2px;
-  padding: 10px; }
+  padding: 10px;
+  content-visibility: auto; }
   .formulario form {
     margin: 20px; }
   .formulario .formulario__password--resaltado {
@@ -239,7 +246,7 @@ body {
 
 .tienda .card-body button {
   background-color: #BF3D22;
-  color: whitesmoke;
+  color: #ffffff;
   width: 100%; }
 
 .modal-footer .formulario__boton {
@@ -256,7 +263,11 @@ body {
   display: flex;
   margin: 20px;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
   .galeria .galeria__musica .musica iframe {
     border: solid antiquewhite 5px;
     border-radius: 40px;
@@ -270,15 +281,20 @@ body {
   display: flex;
   margin: 5px;
   flex-wrap: wrap;
-  justify-content: space-around; }
-  .galeria .galeria__video .videos iframe {
-    border: solid antiquewhite 5px;
-    border-radius: 40px;
-    margin: 10px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
+  justify-content: space-around;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .galeria .galeria__video .galeria__video__responsive1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none; }
 
 .galeria__titulo {
   text-align: center; }

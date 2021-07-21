@@ -2,7 +2,7 @@
     background-color: $color;
 
     @if $color==$buttonColor {
-        color: whitesmoke;
+        color: $fontColorNav;
     }
 
     @else if $color !=$buttonColor {
