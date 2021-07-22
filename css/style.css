@@ -259,44 +259,55 @@ body {
 .galeria .galeria__imagen {
   margin: 0 auto; }
 
-.galeria .galeria__musica {
+.galeria .galeria__musica__musica {
   display: flex;
   margin: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
-  z-index: 1;
+  align-items: center;
   position: relative;
-  width: 100%;
-  overflow: hidden; }
-  .galeria .galeria__musica .musica iframe {
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-bottom: 20px; }
+  .galeria .galeria__musica__musica .respo {
     border: solid antiquewhite 5px;
     border-radius: 40px;
-    margin: 10px;
+    margin: 0px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
 
-.galeria .galeria__video {
+.galeria .galeria__video__videos {
   display: flex;
   margin: 5px;
   flex-wrap: wrap;
   justify-content: space-around;
-  z-index: 1;
+  align-items: center;
   position: relative;
-  width: 100%;
-  overflow: hidden; }
-  .galeria .galeria__video .galeria__video__responsive1 {
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-bottom: 20px; }
+  .galeria .galeria__video__videos .respo {
+    border: solid antiquewhite 5px;
+    border-radius: 40px;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
     height: 100%;
-    border: none; }
+    width: 100%; }
 
-.galeria__titulo {
+.galeria .galeria__titulo {
   text-align: center; }
 
 @-webkit-keyframes slide-in-blurred-right {
