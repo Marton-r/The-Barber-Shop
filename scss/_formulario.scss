@@ -29,4 +29,7 @@ $padding: 2rem;
         font-size: $padding/2+0.5;
         color: $fontColor;
     }
+    textarea {
+        width: 100%;
+    }
 }

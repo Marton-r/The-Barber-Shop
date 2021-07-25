@@ -230,6 +230,8 @@ body {
     font-family: "Smythe", cursive;
     font-size: 1.5rem;
     color: #000000; }
+  .formulario textarea {
+    width: 100%; }
 
 .tituloTienda {
   text-align: center; }
