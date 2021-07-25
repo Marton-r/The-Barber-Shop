@@ -4,6 +4,7 @@ $h1Font: 'Smythe',
 cursive;
 $h1Size: 4rem;
 $h2Size: 3rem;
+$h3Size: 5rem;
 
 h1 {
     color: $fontColor;
@@ -17,6 +18,10 @@ h2 {
     font-size: x-large;
     font-family: $h1Font;
     font-size: $h2Size;
+}
+
+h3{
+    font-size: $h3Size;
 }
 
 p {
