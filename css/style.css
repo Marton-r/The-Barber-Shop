@@ -168,7 +168,7 @@ body {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "titulo titulo" "coll-1 coll-2" "coll-3 coll-4" "coll-5 coll-6";
-  gap: 10px;
+  gap: 20px;
   justify-items: center;
   align-items: center; }
   .nosotrosGrid .nosotrosGrid__equipo {
@@ -262,6 +262,9 @@ body {
 /* MIXINS*/
 .galeria .galeria__imagen {
   margin: 0 auto; }
+  .galeria .galeria__imagen .carousel-item img {
+    border: solid antiquewhite 5px;
+    border-radius: 40px; }
 
 .galeria .galeria__musica__musica {
   display: flex;
