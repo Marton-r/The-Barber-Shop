@@ -2,8 +2,10 @@
 <html lang="es">
 
 <head>
-  <meta name="description" content="Reservá un turno para lucir impecable y con estilo. Atendemos de martes a sábado de 10 AM a 8 PM.">
-  <meta name="keywords" content="barberia, barber shop, peluqueria hombres, barberia y peluqueria, barberia moderna, barberia vintage, peluqueria masculina, productos para barba, productos para bigote, perfume masculino">
+  <meta name="description"
+    content="Reservá un turno para lucir impecable y con estilo. Atendemos de martes a sábado de 10 AM a 8 PM.">
+  <meta name="keywords"
+    content="barberia, barber shop, peluqueria hombres, barberia y peluqueria, barberia moderna, barberia vintage, peluqueria masculina, productos para barba, productos para bigote, perfume masculino">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,13 +23,13 @@
 </head>
 
 <body>
-  <div class="container col-9">
+  <div class="container col-md-9 col-sm-10">
     <header class="header" id="top">
       <div class="row header__row">
-        <div class="header__logo col-9">
+        <div class="header__logo col-sm-9">
           <img class="banner img-fluid" src="../img/The Barber Shop-banner.png" alt="Barber shop banner">
         </div>
-        <div class="login col-3">
+        <div class="login col-sm-3">
           <div class="login__boton">
             <p>
               <a class="btn login__boton--color" data-bs-toggle="collapse" href="#collapseExample" role="button"
@@ -93,22 +95,28 @@
     </header>
     <!-- Fin del header -->
     <div>
-      <h2 class="form__titulo">Formulario de reserva</h2>
       <form class="formulario" action="gracias-turno.html">
-        <label for="nombre">Nombre:</label></br>
-        <input type="text" name="nombre" id="nombre" placeholder=" Ingresá tu Nombre" required></br>
-
-        <label for="email">Email:</label></br>
-        <input type="email" name="email" id="email" placeholder="Ingresá tu Email" required></br>
-
-        <label for="telefono">Teléfono:</label></br>
-        <input type="number" name="telefono" id="telefono" placeholder="Ingresá tu Teléfono" required></br>
-
-        <label for="reserva">Elegí día y hora:</label></br>
-        <input type="datetime-local" id="reserva" name="fecha-hora" required>
-        </br>
-        <input type="submit" value="Enviar" class="formulario__boton">
-        <input class="formulario__boton" type="reset" value="Limpiar Formulario">
+        <div class="formulario__form">
+          <h2 class="form__titulo">Formulario de reserva</h2>
+          <div class="formulario__grupo">
+            <label for="nombre">Nombre:</label></br>
+            <input type="text" name="nombre" id="nombre" placeholder=" Ingresá tu Nombre" required><span
+              class="barra"></span></div></br>
+          <div class="formulario__grupo">
+            <label for="email">Email:</label></br>
+            <input type="email" name="email" id="email" placeholder="Ingresá tu Email" required><span
+              class="barra"></span></div></br>
+          <div class="formulario__grupo">
+            <label for="telefono">Teléfono:</label></br>
+            <input type="number" name="telefono" id="telefono" placeholder="Ingresá tu Teléfono" required><span
+              class="barra"></span></div></br>
+          <div class="formulario__grupo">
+            <label for="reserva">Elegí día y hora:</label></br>
+            <input type="datetime-local" id="reserva" name="fecha-hora" required><span class="barra"></span></div>
+          </br>
+          <input type="submit" value="Enviar" class="formulario__boton">
+          <input class="formulario__boton" type="reset" value="Limpiar Formulario">
+        </div>
       </form>
     </div>
     <hr>
@@ -125,15 +133,19 @@
         </address>
         <div class="footer__redes col-lg-6 col-md-12">
           <div class="col-3">
-            <a href="https://www.youtube.com/" target="blank"><img src="../img\logotipo-de-youtube.png" alt="logo de youtube" width="40px" /></a>
+            <a href="https://www.youtube.com/" target="blank"><img src="../img\logotipo-de-youtube.png"
+                alt="logo de youtube" width="40px" /></a>
           </div>
           <div class="col-3">
-            <a href="https://ar.pinterest.com/" target="blank"><img src="../img\pinterest.png" alt="logo de pinterest" width="40px" /></a>
+            <a href="https://ar.pinterest.com/" target="blank"><img src="../img\pinterest.png" alt="logo de pinterest"
+                width="40px" /></a>
           </div>
           <div class="col-3">
-            <a href="https://www.instagram.com/" target="blank"><img src="../img\logotipo-de-instagram.png" alt="logo de instagram" width="40px" /></a></div>
+            <a href="https://www.instagram.com/" target="blank"><img src="../img\logotipo-de-instagram.png"
+                alt="logo de instagram" width="40px" /></a></div>
           <div class="col-3">
-            <a href="https://www.facebook.com/" target="blank"><img src="../img\facebook.png" alt="logo de facebook" width="40px" /></a>
+            <a href="https://www.facebook.com/" target="blank"><img src="../img\facebook.png" alt="logo de facebook"
+                width="40px" /></a>
           </div>
         </div>
       </div>

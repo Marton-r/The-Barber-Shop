@@ -13,11 +13,20 @@
             flex-wrap: wrap;
 
             .login__boton--color {
-                background-color: $buttonColor;
+                background-image: linear-gradient(to right, #fcff9e 0%, #c67700 51%, #fcff9e 100%);
+                transition: 0.7s;
+                background-size: 200% auto;
                 color: $fontColor;
+                box-shadow: 0 0 20px #eee;
+                display: block;
+                font-family: $h1Font;
+                font-size: 1.5rem;
+                width: 100%;
 
                 &:hover {
-                    background-color: #f59a88;
+                    background-position: right center;
+                    color: #fff;
+                    cursor: pointer;
                 }
             }
         }
