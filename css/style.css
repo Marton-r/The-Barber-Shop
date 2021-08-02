@@ -286,6 +286,9 @@ body {
     left: 0%; }
   .formulario #estado {
     background: none; }
+  .formulario .formulario__coments {
+    border: 1px solid #000000;
+    border-radius: 10px; }
 
 .tituloTienda {
   text-align: center; }
