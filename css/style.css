@@ -13,6 +13,10 @@ h2 {
 h3 {
   font-size: 5rem; }
 
+h5 {
+  font-family: "Smythe", cursive;
+  font-size: 2rem; }
+
 p {
   color: #000000; }
 
@@ -165,12 +169,14 @@ body {
       width: 10rem; }
 
 .comentarios__p {
+  text-align: center;
   font-weight: bold;
   line-height: 1.5rem;
   font-family: "EB Garamond", serif;
   width: fit-content;
   padding: 1rem;
-  margin: 5px; }
+  margin: 5px;
+  font-size: 1.1rem; }
 
 .nosotrosGrid {
   display: grid;
@@ -180,14 +186,17 @@ body {
   gap: 20px;
   justify-items: center;
   align-items: center; }
-  .nosotrosGrid .nosotrosGrid__equipo {
-    padding: 20px;
-    font-family: "EB Garamond", serif;
-    width: 100%; }
-  .nosotrosGrid .equipo img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover; }
+
+.equipo img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: auto; }
+
+.equipo .equipo__titulo {
+  margin-top: 1rem;
+  text-align: center; }
 
 .uno {
   grid-area: coll-1; }

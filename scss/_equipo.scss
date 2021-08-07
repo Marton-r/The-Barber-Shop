@@ -10,20 +10,21 @@
   gap: 20px;
   justify-items: center;
   align-items: center;
+}
 
-  .nosotrosGrid__equipo {
-    padding: 20px;
-    font-family: $pFont;
-    width: 100%;
-  }
-  .equipo{
+.equipo{
     img{
       width: 250px;
       height: 250px;
       object-fit: cover;
+      display: block;
+      margin: auto;
+    }
+    .equipo__titulo{
+      margin-top: 1rem;
+      text-align: center;
     }
   }
-}
 
 .uno {
   grid-area: coll-1;
@@ -56,9 +57,10 @@
   justify-content: center;
   align-content: center;
   img{
-    max-width: 100px;
+     max-width: 100px;
   }
 }
+
 .nosotros__titulo{
   text-align: center;
 }

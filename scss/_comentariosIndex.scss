@@ -18,10 +18,12 @@ $padding: 2rem;
   }
   
   .comentarios__p {
+    text-align: center;
     font-weight: bold;
     line-height: 1.5rem;
     font-family: $pFont;
     width: fit-content;
     padding: $padding/2;
     margin: 5px;
+    font-size: 1.1rem;
   }
