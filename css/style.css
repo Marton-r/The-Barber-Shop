@@ -20,6 +20,10 @@ h5 {
 p {
   color: #000000; }
 
+.header__linkTop {
+  font-family: "Smythe", cursive;
+  font-size: 1.2rem; }
+
 .container .header .header__titulo {
   padding: 1rem;
   font-weight: bold; }
